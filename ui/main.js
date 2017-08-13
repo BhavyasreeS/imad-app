@@ -11,6 +11,6 @@ button.onclick=function (){
       }
     };
   
-  request.open('Get','http://sbhavya1515.imad.hasura-app.io/counter',true);
+  request.open('Get','https://sbhavya1515.imad.hasura-app.io/counter',true);
   request.send(null);
 };
