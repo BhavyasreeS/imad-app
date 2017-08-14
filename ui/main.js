@@ -1,4 +1,5 @@
 var button=document.getElementById('counter');
+var submit=document.getElementById('submit_btn')
 button.onclick=function (){
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
@@ -15,7 +16,7 @@ button.onclick=function (){
         }  
       }
     };
-  
+  var name=nameInput.value;
   request.open('Get','http://sbhavya1515.imad.hasura-app.io/submit-name?name='+name,true);
   request.send(null);
 };
